@@ -10,8 +10,6 @@ This research project aims to improve image captioning by leveraging **CNNs for 
 
 - 📸 **Image Feature Extraction** – Uses a CNN Model to extract visual embeddings.  
 - 🔡 **Caption Generation** – Utilizes a **Transformer model** to generate coherent and meaningful captions.  
-- 🎯 **Attention Mechanism** – Enhances caption quality by focusing on different image regions dynamically.  
-- 🔍 **Beam Search Decoding** – Improves caption fluency compared to greedy search.  
 
 ## 🏗️ Model Architecture  
 
