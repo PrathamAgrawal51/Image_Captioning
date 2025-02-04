@@ -1,37 +1,51 @@
-# Image_Captioning
-Image Captioning Model
-This project implements an image captioning model using deep learning techniques. The model is trained on the Flickr8k dataset and uses a pre-trained InceptionV3 model for image feature extraction and a stacked bi-directional GRU layer for caption generation.
+# 🖼️ Image Captioning using CNN & Transformer  
 
-Data
-The dataset used for this project is the Flickr8k dataset, which contains 8092 images in jpeg format. Each image is accompanied by 5 descriptions.
+A deep learning-based **Image Captioning Model** that generates descriptive captions for images using **Convolutional Neural Networks (CNNs) for feature extraction** and **Transformer models for sequence generation**.  
 
-Flickr8k Dataset
-Flickr8k Text
-Model
-The model is built and trained using Keras. It consists of two main components:
+## 📌 Project Overview  
 
-Image Feature Extraction: A pre-trained InceptionV3 model is used to extract features from the images. The last layer of the model is removed and the output of the second last layer is used as the image features.
+This research project aims to improve image captioning by leveraging **CNNs for visual feature extraction** and **Transformer-based models for generating captions**. The model is trained on the **Flickr8k dataset**, which consists of **8,092 images**, each annotated with **five descriptive captions**.  
 
-Caption Generation: A stacked bi-directional GRU layer is used to generate captions. The input to this layer is the image features and the pre-trained fasttext embeddings of the captions. The model predicts the next word till the end of the caption using greedy search during testing.
+## 🚀 Features  
 
-Results
-The trained model is able to generate captions for real-world images. The captions are not perfect but they are able to capture the main objects and actions in the image.
+- 📸 **Image Feature Extraction** – Uses a CNN Model to extract visual embeddings.  
+- 🔡 **Caption Generation** – Utilizes a **Transformer model** to generate coherent and meaningful captions.  
+- 🎯 **Attention Mechanism** – Enhances caption quality by focusing on different image regions dynamically.  
+- 🔍 **Beam Search Decoding** – Improves caption fluency compared to greedy search.  
 
-To Do
-Add attention to the model to improve the quality of the captions.
-Use beam search instead of greedy search during testing.
-Usage
-To use the model, first download the dataset and the trained weights. Then, run the 'image_captioning_model.ipynb' notebook. The notebook contains code to load the dataset, preprocessing the images and captions, loading the trained weights, and generating captions for user given images.
+## 🏗️ Model Architecture  
 
-Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+### 1️⃣ **Image Feature Extraction (CNN)**  
+- A CNN Model extracts **high-level image features**.  
+- The last fully connected layer is removed to obtain feature vectors.  
 
-Acknowledgments
-Flickr8k Dataset
-Flickr8k_text
-InceptionV3
-Python
-Jupyter Notebook- Numpy
-Pandas
-Matplotlib
-Tensorflow
+### 2️⃣ **Caption Generation (Transformer)**  
+- A **Transformer-based decoder** processes the extracted image features.  
+- Uses **self-attention** to capture contextual dependencies.  
+- Outputs a sequence of words forming a meaningful caption.  
+
+## 📊 Dataset  
+
+- **Flickr8k Dataset** 🖼️  
+  - **8,092 images** in JPEG format.  
+  - Each image has **five different textual descriptions**.  
+  - Used for training, validation, and testing.  
+
+## 🔧 Installation & Usage  
+
+1️⃣ **Clone the repository:**  
+```sh
+https://github.com/PrathamAgrawal51/Image_Captioning.git
+```
+2️⃣ **Run the model:**
+- Download the Flickr8k dataset and pretrained weights.
+- Open and execute the image_captioning_transformer.ipynb notebook.
+- Upload an image to generate captions!
+
+## 🎯 Future Improvements
+- ✅ Experiment with Vision Transformers (ViTs) for better feature extraction.
+- ✅ Fine-tune on larger datasets (MS-COCO) for improved generalization.
+- ✅ Enhance caption fluency using RL-based optimization (CIDEr / BLEU scores).
+
+## 🤝 Contributing
+Contributions are welcome! If you'd like to improve the model, feel free to open an issue or submit a pull request.
