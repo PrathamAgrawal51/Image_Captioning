@@ -33,7 +33,7 @@ This research project aims to improve image captioning by leveraging **CNNs for 
 
 1️⃣ **Clone the repository:**  
 ```sh
-https://github.com/PrathamAgrawal51/Image_Captioning.git
+git clone https://github.com/PrathamAgrawal51/Image_Captioning.git
 ```
 2️⃣ **Run the model:**
 - Download the Flickr8k dataset and pretrained weights.
